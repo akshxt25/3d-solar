@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Solar System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main Controls -->
+    <div id="controls">
+        <div id="app-header">
+            <h2 id="app-title">Solar System</h2>
+        </div>
+        
+        <div id="button-container">
+            <button id="save">Save Config</button>
+            <button id="load">Load Config</button>
+        </div>
+        
+        <div id="view-controls">
+            <!-- <button id="reset-view" class="full-width">Reset Camera</button> -->
+            <button id="toggle-orbits" class="full-width">Toggle Orbit Paths</button>
+        </div>
+    </div>
+    
+    <!-- Planet Information Panel -->
+    <div id="info-panel">
+        <h3>Planet Information</h3>
+        <div id="planet-info">Select a planet to view details</div>
+    </div>
+    
+    <!-- Loading Indicator -->
+    <div id="loading-indicator">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        <span id="loading-text">Loading configuration...</span>
+    </div>
+    
+    <!-- Load Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.146/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.146/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dat.gui@0.7.9/build/dat.gui.min.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
